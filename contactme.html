@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="myportfolio.css">
+	<script src="https://kit.fontawesome.com/b04d1f1b51.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1><a>Akshat</a> Portfolio</h1>
+		<nav>
+			<a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a>
+			<a href="profile.html"><i class="fa-solid fa-book-open-reader"></i> Profile</a>
+			<a href="experience.html"><i class="fa-solid fa-star"></i> Experience</a>
+			<a href="contactme.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+		</nav>
+	</header>
+	<hr>
+	<main>
+		<h2 class="contacttitle"> Contact Me!</h2>
+
+		<div class="formtext">
+			<div class="contactinformation">
+				<p class="touch">Get in touch</p>
+				<p class="getintouch">If you have any questions, please fill in the form or contact through
+					the information below.</p>
+
+				<p class="mail">
+					<span class="d">Email:</span> akshat.jitu9@gmail.com
+				</p>
+				<p class="phone">
+					<span class="d">Phone number: </span> 07404818514
+				</p>
+
+				<div class="icons">
+					<a href="https://instagram.com/akshat_jitu" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://facebook.com/akshat.jitu.7" target="_blank" class="fa-brands fa-facebook"></a>
+					<a href="https://snapchat.com/add/akshat083?share_id=fOgxl1v4Tm6Q0Kk/uDCdeA&locale=en_"
+						target="_blank" class="fa-brands fa-snapchat"></a>
+					<a href="mailto:akshat.jitu9@gmail.com" class="fa-sharp fa-regular fa-envelope"></a>
+				</div>
+
+			</div>
+
+			<div class="layout">
+				<form id="contactForm">
+					<h4>Contact Form</h4>
+
+					<label for="firstname"><i class="fa-solid fa-user"></i><strong> Firstname:</strong> &nbsp;
+						<small class="error"></small></label>
+					<input type="text" id="firstname" name="firsname" placeholder="Please enter your firstname" required
+						oninvalid="this.setCustomValidity('Please Enter your firstname')"
+						oninput="this.setCustomValidity('')">
+
+
+					<label for="surname"><i class="fa-sharp fa-regular fa-user"></i><strong> Surname:</strong> &nbsp;
+						<small class="error"></small></label>
+					<input type="text" id="surname" name="surname" placeholder="Please enter your surname" required
+						oninvalid="this.setCustomValidity('Please Enter your surname')"
+						oninput="this.setCustomValidity('')">
+
+
+					<label for="emailaddress"><i class="fa-regular fa-inbox"></i><strong> Email Address:</strong> &nbsp;
+						<small class="error"></small></label>
+					<input type="text" id="emailaddress" placeholder="Please enter your email address" required
+						oninvalid="this.setCustomValidity('Please Enter your email')"
+						oninput="this.setCustomValidity('')">
+
+					<label for="message"><i class="fa-solid fa-message"></i><strong> Message:</strong> &nbsp;
+						<small class="error"></small></label>
+					<textarea id="message" name="message" placeholder="Please type your message." rows="10" required
+						oninvalid="this.setCustomValidity('Please Enter your message')"
+						oninput="this.setCustomValidity('')"></textarea>
+
+
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+					<p id="success"></p>
+				</form>
+			</div>
+
+			<script src="js/javascript.js"></script>
+		</div>
+
+		<div class="footer">
+			<p class="copyright">&#169; copyright-2023 - AKSHAT CALA</p>
+			<div class="icons">
+				<a href="https://instagram.com/akshat_jitu" target="_blank" class="fa fa-instagram"></a>
+				<a href="https://facebook.com/akshat.jitu.7" target="_blank" class="fa-brands fa-facebook"></a>
+				<a href="https://snapchat.com/add/akshat083?share_id=fOgxl1v4Tm6Q0Kk/uDCdeA&locale=en_" target="_blank"
+					class="fa-brands fa-snapchat"></a>
+				<a href="mailto:akshat.jitu9@gmail.com" class="fa-sharp fa-regular fa-envelope"></a>
+			</div>
+		</div>
+
+	</main>
+
+	<dialog id="dialogbox">
+		<h1 class="dialogheading">Thank you for submitting the form.</h1>
+		<p class="dialogmessage">I have received your request and will get back to you as soon as possible. </p>
+
+		<span class="button"><a href="contactme.html">Back</a></span>
+	</dialog>
+</body>
+
+</html>
